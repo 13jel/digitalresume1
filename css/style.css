@@ -1,0 +1,117 @@
+main {
+    margin: auto;
+    align-self: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+body {
+    background-color: #949396;
+    width: 90%;
+    margin: 0 auto;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+
+}
+
+/*Header*/
+header {
+    text-align: center;
+    width: 700px;
+    border-bottom: 2px solid #4C4B63;
+    background-color: #4C4B63;
+    font-size: 33px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 13px;
+    padding-top: 1px;
+
+}
+.profile-image {
+    display: block;
+    width: 200px;
+    object-fit: cover;
+    margin: 20px auto;
+    border-radius: 23px;
+    border: 3px solid #333;
+
+}
+.profile-image:hover {
+    transform: scale(1.7);
+}
+
+/*Nav with responsive design*/
+.nav {
+    text-align: center;
+    background-color: #BCBDC0;
+    border: 2px solid #63625d;
+    padding: 10px;
+    margin-top: 10px;
+    width: 670px;
+    border-radius: 13px;
+
+}
+a {
+    color: #333;
+
+}
+a:hover {
+    background-color: #63625d;
+    color: #BCBDC0;
+    padding: 10px;
+}
+
+
+
+
+#container {
+    display: grid;
+    align-items: top;
+    justify-items: center;
+    border: 3px solid #4C4B63;
+    gap: 10px;
+    padding: 10px;
+    margin: 10px;
+
+    grid-template-rows: auto ;
+    grid-template-columns: 400px auto ;
+    grid-template-areas: 
+    "header header header "
+    "main1 main1 sidebar" 
+    "main2 main2 sidebar" 
+    "footer footer footer";
+}
+
+.header {
+    grid-area: header;
+    justify-items: center;
+}
+.main1 {
+    grid-area: main1;
+    background-color: #bababb;
+    padding: 10px;
+    border-radius: 13px;
+    border: 2px solid #63625d;
+
+}
+.main2 {
+    grid-area: main2;
+    background-color: #bababb;
+    padding: 10px;
+    border-radius: 13px;
+    border: 2px solid #63625d;
+
+
+}
+.sidebar {
+    grid-area: sidebar;
+    background-color: #bababb;
+    padding: 10px;
+    border-radius: 13px;
+    border: 2px solid #63625d;
+
+}
+.footer {
+    grid-area: footer;
+
+}
