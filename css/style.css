@@ -1,37 +1,36 @@
 main {
     margin: auto;
     align-self: center;
-    width: 100%;
-    max-width: 1200px;
+
 }
 
 body {
     background-color: #949396;
-    width: 90%;
+    max-width: 800px;
     margin: 0 auto;
     line-height: 1.6;
     display: flex;
     justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
 
 }
+
 
 /*Header*/
 header {
     text-align: center;
-    width: 700px;
-    border-bottom: 2px solid #4C4B63;
+    width: 820px;    
+    border-bottom: 1px solid #4C4B63;
     background-color: #4C4B63;
     font-size: 33px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     border-radius: 13px;
-    padding-top: 1px;
+    padding-top: 10px;
 
 }
 .profile-image {
-    display: block;
     width: 200px;
-    object-fit: cover;
-    margin: 20px auto;
+    text-align: center;
     border-radius: 23px;
     border: 3px solid #333;
 
@@ -47,7 +46,7 @@ header {
     border: 2px solid #63625d;
     padding: 10px;
     margin-top: 10px;
-    width: 670px;
+    width: 800px;
     border-radius: 13px;
 
 }
@@ -61,7 +60,52 @@ a:hover {
     padding: 10px;
 }
 
+/*Main*/
+.paragraph {
+    text-align: center;
 
+}
+
+.cv-section h2 {
+    text-align: center;
+
+}
+.cv-section2 h2 {
+    text-align: center;
+
+}
+
+.cv-section2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 4px;
+    align-items: flex-start
+
+}
+
+.skills-title {
+    flex-basis: 100%;
+    margin: 0 0 6px 0;
+}
+
+.pill {
+    font-size: 13px;
+    margin: 0;
+    background-color: rgb(226, 226, 226);
+    padding: .5rem .9rem;
+    border-radius: 999px;
+    border: 1px solid rgba(0, 0, 0, .12);
+    width: fit-content;
+    white-space: nowrap;
+
+}
+
+footer {
+    position: sticky;
+    top: 100vh;
+
+}
 
 
 #container {
@@ -71,7 +115,6 @@ a:hover {
     border: 3px solid #4C4B63;
     gap: 10px;
     padding: 10px;
-    margin: 10px;
 
     grid-template-rows: auto ;
     grid-template-columns: 400px auto ;
@@ -109,6 +152,7 @@ a:hover {
     padding: 10px;
     border-radius: 13px;
     border: 2px solid #63625d;
+    height: 480px;
 
 }
 .footer {
