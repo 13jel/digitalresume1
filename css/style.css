@@ -1,39 +1,37 @@
-main {
-    margin: auto;
-    align-self: center;
-
-}
-
 body {
     background-color: #949396;
     font-family: Arial, Helvetica, sans-serif;
 
 }
 
-/*Large desktop*/
+/*MQ*/
 #container {
-    width: 960px;
-    margin: 0 auto;
+    display: block;
+    margin: 20px auto;
+    justify-content: center;
 
 }
-/*Small desktop*/
-@media screen and (max-width: 980px) {
+@media screen and (min-width: 768px) {
     #container {
-        width: 700px;
+        width: fit-content;
     }
 }
-/*Tablet*/
-@media screen and (max-width: 700px) {
-    #container{
-        width: 500px;
-    }
-}
-/*Mobile*/
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 769px) and (max-width: 960px) {
     #container {
-        width: 300px;
+        width: fit-content;
     }
 }
+@media screen and (min-width: 961px) and (max-width: 1200px) {
+    #container {
+        width: fit-content;        
+    }
+}
+@media screen and (min-width: 1201px) {
+    #container {
+        width: fit-content;        
+    }
+}
+
 
 /*Header*/
 header {
@@ -43,7 +41,6 @@ header {
     background-color: #4C4B63;
     font-size: 33px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    border-radius: 13px;
     padding-top: 10px;
 
 }
@@ -59,7 +56,7 @@ header {
 }
 
 /*Nav with responsive design*/
-ul.nav {
+ul {
     position: sticky;
     top: 0;
     width: 100%;
@@ -68,13 +65,14 @@ ul.nav {
     padding: 0;
     background-color: #4C4B63;
     display: flex;
+    border-top: 1px solid #BCBDC0;
 
 }
-ul.nav li {
+ul li {
     float: left;
 
 }
-ul.nav li a {
+ul li a {
     display: block;
     color: #BCBDC0;
     text-align: center;
@@ -82,17 +80,17 @@ ul.nav li a {
     text-decoration: none;
 
 }
-ul.nav li a.active {
+ul li a:active {
 background-color: #4C4B63;
 
 }
-ul.nav li.right {
+ul li.rightbutton {
     float: right;
 
 }
 @media screen and (max-width: 600px) {
-  ul.nav li.right, 
-  ul.nav li {float: none;}
+  ul li.right, 
+  ul li {float: none;}
 }
 
 /*Homepage*/
@@ -106,12 +104,12 @@ ul.nav li.right {
     text-align: center;
 
 }
-.cv-section2 h2 {
-    text-align: center;
+.cv-section {    
+    width: 100%;
+    gap: 4px 4px;
 
 }
-
-.cv-section2 {
+.skills {    
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -119,8 +117,8 @@ ul.nav li.right {
     align-items: flex-start
 
 }
-
 .skills-title {
+    text-align: center;
     flex-basis: 100%;
     margin: 0 0 6px 0;
 }
@@ -144,6 +142,7 @@ ul.nav li.right {
 /*Footer*/
 footer {
     position: sticky;
+    text-align: center;
     top: 100vh;
 
 }
