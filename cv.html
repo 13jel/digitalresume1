@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Julia Lindström | Creative Designer</title>
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
@@ -12,25 +13,23 @@
         
         <div class="header">
             <header>
-                <img src="img/profilepic.jpg" class="profile-image" alt="A woman with glasses and a soft smile">
                 <h1>Julia Lindström</h1>
             </header>
             
-                    <ul>
-                        <li><a href="index.html">Homepage</a></li>
-                        <li><a href="cv.html">CV</a></li>
-                        <li class="right"><a href="contact.html">Contact</a></li>
-                    </ul>
+                <nav class="nav">
+                    <div class="nav-left">
+                        <a class="nav-btn" href="index.html">Homepage</a>
+                        <a class="nav-btn" href="cv.html">CV</a>
+                        <a class="nav-btn" href="portfolio.html">Portfolio</a>
                     </div>
+                    <div class="nav-right">
+                        <a class="nav-btn nav-cta" href="contact.html">Contact</a>
+
+                    </div>
+                </nav>
+        </div>
 
         <div class="cv-section">
-                    <h2 id="experience">Experience</h2>
-                        <ol>
-                            <li>Student Aid Investigator, Swedish Board of Student Finance 2022-now</li>
-                            <li><li>Employment Agent, The Swedish Employment Agency 2020-2022</li>
-                            <li>Social Secretary, Social Services 2019-2020</li>
-                        </ol>
-                <hr>
                     <h2 id="education">Education</h2>
                         <ol>
                             <li>Fullstack Developer, Medieinstitutet 2025-now</li>
@@ -39,7 +38,15 @@
                             <li>Mental Health First Aid, Karolinska Institute</li>
                             <li>Strategic Peacebuilding and Comflict Management, Härnösands Residental College for Adult Education</li>
                         </ol>
-                </section>
+                <hr>
+            <h2 id="experience">Experience</h2>
+                        <ol>
+                            <li>Student Aid Investigator, Swedish Board of Student Finance 2022-now</li>
+                            <li><li>Employment Agent, The Swedish Employment Agency 2020-2022</li>
+                            <li>Social Secretary, Social Services 2019-2020</li>
+                        </ol>
+
+        </section>
             <hr>
         </div>
             <div class="skills">
@@ -48,14 +55,25 @@
                             <p class="pill">HTML</p>
                             <p class="pill">CSS</p>
                             <p class="pill">JavaScript</p>
+                            <p class="pill">GitHub</p>
+                            <p class="pill">Web development</p>
+                            <p class="pill">DevOps</p>
+                            <p class="pill">Agile methodologies</p>
+                            <p class="pill">Project management</p>
+                            <p class="pill">Team collaboration</p>
+                            <p class="pill">Communication skills</p>
+                            <p class="pill">Frontend development</p>
+                            <p class="pill">Backend development</p>
+                            <p class="pill">Database management</p>
+                            <p class="pill">Fullstack development</p>
+                            <p class="pill">App development</p>
+                            <p class="pill">Adaptability</p>
                             <p class="pill">Procreate & Adobe tools</p>
                             <p class="pill">Creative writing</p>
-                            <p class="pill">Creative Direction</p>
                             <p class="pill">Aesthetic intelligence</p>
                             <p class="pill">Digital illustration</p>
                             <p class="pill">Surface pattern design</p>
                             <p class="pill">POD platforms</p>
-                            <p class="pill">Independent learning</p>
                             <p class="pill">Visual storytelling</p>
                             <p class="pill">Product development</p>
                             <p class="pill">Adaptive problem-solving</p>
@@ -67,9 +85,10 @@
         </main>
         
         <div class="footer">
-            <footer>&copy; Julia Lindström 2025. All rights reserved</footer>
+            <footer>&copy; Julia Lindström <span id="year"></span>. All rights reserved</footer>
         </div>
     </div>
 
+        <script src="js/app.js"></script>
 </body>
 </html>
